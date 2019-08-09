@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Orb of Alchemy",
+    "asset": "Alchemy.png",
+    "stackSize": 10,
+    "effect": "Upgrades a normal item to a rare item",
+    "targetRarities": ["normal"],
+    "positionLeft": "407.708px",
+    "positionTop": "135.091px"
+  },
+  {
+    "name": "Orb of Alteration",
+    "asset": "Alteration.png",
+    "stackSize": 20,
+    "effect": "Reforges a magic item with new random modifiers",
+    "targetRarities": ["magic"],
+    "positionLeft": "70.5882px",
+    "positionTop": "135.091px"
+  },
+  {
+    "name": "Orb of Annulment",
+    "asset": "Annulment.png",
+    "stackSize": 20,
+    "effect": "Removes a random modifier from an item",
+    "targetRarities": ["magic", "rare"],
+    "positionLeft": "124.138px",
+    "positionTop": "135.091px"
+  },
+  {
+    "name": "Orb of Augmentation",
+    "asset": "Augment.png",
+    "stackSize": 30,
+    "effect": "Enchants a magic item with a new random modifier",
+    "targetRarities": ["magic"],
+    "positionLeft": "175.862px",
+    "positionTop": "184.381px"
+  },
+  {
+    "name": "Blessed Orb",
+    "asset": "Blessed.png",
+    "stackSize": 20,
+    "effect": "Randomizes the numeric values of the implicit modifier of an item",
+    "targetRarities": ["normal", "magic", "rare"],
+    "positionLeft": "513.59px",
+    "positionTop": "135.091px"
+  },
+  {
+    "name": "Chaos Orb",
+    "asset": "Chaos.png",
+    "stackSize": 10,
+    "effect": "Reforges a rare item with new random modifiers",
+    "targetRarities": ["rare"],
+    "positionLeft": "460.041px",
+    "positionTop": "135.091px"
+  },
+  {
+    "name": "Divine Orb",
+    "asset": "Divine.png",
+    "stackSize": 10,
+    "effect": "Randomizes the numeric values of the random modifiers on an item",
+    "targetRarities": ["magic", "rare", "unique"],
+    "positionLeft": "513.59px",
+    "positionTop": "184.381px"
+  },
+  {
+    "name": "Exalted Orb",
+    "asset": "Exalted.png",
+    "stackSize": 10,
+    "effect": "Enchants a rare item with a new random modifier",
+    "targetRarities": ["rare"],
+    "positionLeft": "239.148px",
+    "positionTop": "135.091px"
+  },
+  {
+    "name": "Regal Orb",
+    "asset": "Regal.png",
+    "stackSize": 10,
+    "effect": "Upgrades a magic item to a rare item",
+    "targetRarities": ["magic"],
+    "positionLeft": "354.767px",
+    "positionTop": "135.091px"
+  },
+  {
+    "name": "Orb of Scouring",
+    "asset": "Scouring.png",
+    "stackSize": 30,
+    "effect":"Removes all modifiers from an item",
+    "targetRarities": ["magic", "rare"],
+    "positionLeft": "354.767px",
+    "positionTop": "265.314px"
+  },
+  {
+    "name": "Orb of Transmutation",
+    "asset": "Transmutation.png",
+    "stackSize": 40,
+    "effect": "Upgrades a normal item to a magic item",
+    "targetRarities": ["normal"],
+    "positionLeft": "17.6471px",
+    "positionTop": "135.091px"
+  }
+]
