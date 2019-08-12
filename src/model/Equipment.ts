@@ -5,22 +5,34 @@ export default class Equipment extends Item {
   base: string
   type: string
   rarity: string
+  level: number
   implicit: Array<Modifier>
-  prefixes: Array<Modifier>
-  suffixes: Array<Modifier>
+  affixes: Array<Modifier>
   crafted: Array<Modifier>
   isShaper: boolean
   isElder: boolean
 
   static fromJSON(json: any): Equipment {
-    const e = <Equipment> super.fromJSON(json);
+    const e = new Equipment();
     e.base = json.base;
     e.type = json.type;
     e.rarity = "normal";
     e.implicit = new Array<Modifier>();
-    e.prefixes = new Array<Modifier>();
-    e.suffixes = new Array<Modifier>();
+    e.affixes = new Array<Modifier>();
     e.crafted = new Array<Modifier>();
+    e.gridSize = json.gridSize;
     return e;
+  }
+
+  getBackgroundClass(): string {
+    if (this.isShaper) {
+      return `shaper-${this.gridSize}`;
+    }
+
+    if (this.isElder) {
+      return `elder-${this.gridSize}`;
+    }
+
+    return "";
   }
 }

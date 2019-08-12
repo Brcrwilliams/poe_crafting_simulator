@@ -3,6 +3,7 @@
     <div class="stashTabContainer">
       <div class="currencyTab">
         <CurrencyContainer v-for="c in currency" v-bind:key="c.name" v-bind:currency="c"/>
+        <EquipmentContainer v-bind:equip="equip" />
       </div>
     </div>
   </div>
@@ -12,14 +13,18 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Currency from "../model/Currency";
 import CurrencyContainer from "./CurrencyContainer.vue";
+import EquipmentContainer from "./EquipmentContainer.vue";
+import Weapon from "../model/Weapon";
 
 @Component({
   components: {
     CurrencyContainer,
+    EquipmentContainer,
   },
 })
 export default class StashTab extends Vue {
   currency = Currency.load();
+  equip = Weapon.load().pop();
 }
 </script>
 

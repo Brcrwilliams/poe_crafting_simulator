@@ -1,0 +1,13 @@
+[
+  {
+    "base": "Fleshripper",
+    "type": "Two Handed Axe",
+    "physicalDamageMin": 80,
+    "physicalDamageMax": 125,
+    "criticalStrikeChance": 7.50,
+    "attacksPerSecond": 1.20,
+    "weaponRange": 13,
+    "gridSize": "2x4",
+    "asset": "Fleshripper.png"
+  }
+]
